@@ -3,6 +3,10 @@ html, body {
         margin: 0;
     }
     
+	.foot{
+		position: relative;
+
+	}
 
     /*div{
         background-color: #FFF;
