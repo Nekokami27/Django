@@ -4,9 +4,10 @@ html, body {
     }
     
 
-    div{
+    /*div{
         background-color: #FFF;
     }
+	*/
 
     
 
@@ -29,16 +30,17 @@ html, body {
 
     #container {
         top: 50px;
-        width: 800px;
+        width: auto;
         height: auto;
         margin: 0 auto;
         display: block;
         position: relative;
 		border-style: double;
         border-width: thin; 
+		border-radius: 10px;
         background-color: #FFF;
-        margin: 30px 50px 30px 50px;
-        border: 2px solid #00A;
+        margin: 30px 50px;
+        border: 4px solid #00A;
     }
 
     #status-box {
