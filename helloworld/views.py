@@ -6,4 +6,4 @@ from django.contrib.auth.models import User
 
 
 def index(request):
-	return HttpResponse("Hello, World. I'm 石敬豪(Terry)or(Nekokami)")
+	return render(request, "nekokami.html")
