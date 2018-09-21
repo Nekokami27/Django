@@ -4,14 +4,14 @@ html, body {
     }
     
 
-    /*div{
+    div{
         background-color: #FFF;
     }
-*/
+
     
 
     #ta {
-        /*color:red;*/
+        color:red;
         font-size: 110%;
         text-indent: 100px;
         text-align: center;
@@ -30,15 +30,15 @@ html, body {
     #container {
         top: 50px;
         width: 800px;
-        /*height: auto;*/
+        height: auto;
         margin: 0 auto;
         display: block;
         position: relative;
-        /*border-style: double;*/
+		border-style: double;
         border-width: thin; 
-        /*background-color: #FFF;*/
-        /*margin: 30px 50px 30px 50px;*/
-        /*border: 2px solid #00A;*/
+        background-color: #FFF;
+        margin: 30px 50px 30px 50px;
+        border: 2px solid #00A;
     }
 
     #status-box {
