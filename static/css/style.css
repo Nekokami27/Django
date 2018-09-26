@@ -92,12 +92,14 @@ html, body {
  
     input[type="button"] {
         width: 10%;
+		cursor: pointer;
     }
  
     .msg {
         width: 73%;
         display: inline-block;
         padding: 5px 0 5px 10px;
+		overflow: auto;
     }
  
     .msg > span {
