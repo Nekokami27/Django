@@ -68,6 +68,7 @@ html, body {
     #send-box {
         width: 100%;
         text-align: center;
+		border: 1px solid darkolivegreen;
 		border-radius: 5px;
     }
  
