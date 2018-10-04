@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Week2Example留言板</title>
+    <title>Guess Numbers!</title>
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -15,22 +15,35 @@
     <p id="ta">by  Nekokami<br></p>
     <div id="container">
         <div id="content">
+            </div>
+            {% for i in list20 %}
             <div class="msg">
-                <span class="name">Pecu</span>
-                Hello,Class!
+                
+                <img src='{{i}}' alt='{{i}}'>
+            </div>
+            {%endfor%}
+        <!--
+        <div>
+            <ul>
+                {% for result in results %}
+                <li>{{ guess }}</li>
 
-            </div>
-            <div class="msg">
-                <span class="name">Michael</span>
-                Hello,Pecu.
-            </div>
+
+
+
+                {% endfor %}
+            </ul>
+        </div>
+        -->
         </div>
         <div id="send-box">
             <form id="send-form">
                 <input type="text" name="name" id="name" placeholder="暱稱">
-                <input type="text" name="msg" id="msg" placeholder="說點什麼？">
-                <input type="submit" id="submit" value="送出">
-				<link href= "#submit">
+                <form method="GUESS" action="send">
+                {% csrf_token %}
+                <input type="text" name="msg" id="msg" placeholder="猜個四位數字？">
+                <button type="submit" id="submit" >送出</button>
+				</form>
             </form>
             <span id='ps'>Ps:格子可以輸入，也可以送出<br>
 			但是不會有反應XD</span>
