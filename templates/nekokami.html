@@ -9,19 +9,32 @@
 </head>
 <body>
     <h1>我是石敬豪(Terry)、(Nekokami)</h1>
-    <h2>這是第二週需要學的<br>
-        是html跟css基礎<br>
-    </h2>
-    <p id="ta">by  Nekokami<br></p>
-    <div id="container">
-        <div id="content">
-            </div>
+    <h2>這是第4週需要學的 <br>
+          
+
+        <!--
             {% for i in list20 %}
-            <div class="msg">
+            <div id = "pic">
                 
                 <img src='{{i}}' alt='{{i}}'>
             </div>
             {%endfor%}
+        -->
+
+    </h2>
+    <p id="ta">by  Nekokami<br></p>
+    <div id="container">
+        <div id="content">
+            
+            {%for k in msgs %}
+            <div class="msg">
+                <span class = "name">{{k.talker}}</span>
+                {{k.message}}
+            </div>
+            {% endfor %}
+
+
+
         <!--
         <div>
             <ul>
