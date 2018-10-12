@@ -9,17 +9,9 @@
 </head>
 <body>
     <h1>我是石敬豪(Terry)、(Nekokami)</h1>
-    <h2>這是第4週需要學的 <br>
+    <h2>這是第5週需要學的 <br>
           
 
-        <!--
-            {% for i in list20 %}
-            <div id = "pic">
-                
-                <img src='{{i}}' alt='{{i}}'>
-            </div>
-            {%endfor%}
-        -->
 
     </h2>
     <p id="ta">by  Nekokami<br></p>
@@ -35,26 +27,13 @@
 
 
 
-        <!--
-        <div>
-            <ul>
-                {% for result in results %}
-                <li>{{ guess }}</li>
-
-
-
-
-                {% endfor %}
-            </ul>
-        </div>
-        -->
         </div>
         <div id="send-box">
-            <form id="send-form">
+            <form id="send-form" action="." method="post">
                 <input type="text" name="name" id="name" placeholder="暱稱">
                 <form method="GUESS" action="send">
                 {% csrf_token %}
-                <input type="text" name="msg" id="msg" placeholder="猜個四位數字？">
+                <input type="text" name="msg" id="msg" placeholder="說些什麼吧">
                 <button type="submit" id="submit" >送出</button>
 				</form>
             </form>
