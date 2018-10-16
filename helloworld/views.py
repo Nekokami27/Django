@@ -12,9 +12,9 @@ def index(request):
 
 def chatboxindex(request):    
 	
-	t1 = TextMessage.objects.create(talker='Michael' , message= 'How is everybody doing?')
-	t2 = TextMessage.objects.create(talker='Alex' , message= 'I fine.')
-	t3 = TextMessage.objects.create(talker='Chard' , message= 'I fine too.')
+#	t1 = TextMessage.objects.create(talker='Michael' , message= 'How is everybody doing?')
+#	t2 = TextMessage.objects.create(talker='Alex' , message= 'I fine.')
+#	t3 = TextMessage.objects.create(talker='Chard' , message= 'I fine too.')
 
 	msgs = TextMessage.objects.all()
 
