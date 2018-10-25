@@ -16,9 +16,9 @@ def chatboxindex(request):
 #	t2 = TextMessage.objects.create(talker='Alex' , message= 'I fine.')
 #	t3 = TextMessage.objects.create(talker='Chard' , message= 'I fine too.')
 	talker = request.GET.get("name",False)
-	comment = request.GET.get("msg",False)
-	db = TextMessage.objects.create( talker=talker, comment=comment)
-	msg = db.objects.all()
+	message = request.GET.get("msg",False)
+	db = TextMessage.objects.create( talker=talker, message=message)
+	msg = TextMessage.objects.all()
 
 	return render(request, "chatbox.html" ,locals())
 

@@ -18,7 +18,7 @@
     <div id="container">
         <div id="content">
             
-            {%for k in msgs %}
+            {%for k in msg %}
             <div class="msg">
                 <span class = "name">{{k.talker}}</span>
                 {{k.message}}
@@ -29,7 +29,7 @@
 
         </div>
         <div id="send-box">
-            <form id="send-form" action="." method="post">
+            <form id="send-form" action="." method="get">
                 <input type="text" name="name" id="name" placeholder="暱稱">
                 <form method="GUESS" action="send">
                 {% csrf_token %}
